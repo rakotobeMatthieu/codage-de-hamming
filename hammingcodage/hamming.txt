@@ -1,0 +1,55 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package fonction;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Tsiry
+ */
+public class MultiplyMatrices {
+
+    public static void main(String[] args) {
+//        int[] vector = { 1,0,1,0,0,1,0 };
+        int[] vector = { 1,1,1,0,0,0,0 };
+        int[][] matrix = { {1,0,1,0,1,0,1}, {0,1,1,0,0,1,1}, {0,0,0,1,1,1,1} };
+        multiplication( vector , matrix );
+        vector[1] = 0 ;
+        multiplication( vector , matrix );
+        
+        ArrayList<Integer> ls = getPosition(3);
+    }
+    
+    public static void multiplication(int[] vector , int[][]matrix ){
+        int[] res = new int[ matrix.length ];
+        for( int i = 0 , l = matrix.length  ; i  < l ; i++ ){
+            for( int j = 0 , m = vector.length ; j < m ;j++ ){
+                int t = 0 ;
+                for( int k = 0 ; k < m  ; k++  ){
+                   t += vector[j] * matrix[i][k]   ;
+                }
+                res[i] = t ; 
+            }
+        }
+        for(int i = 0 ; i < res.length ; i++){
+            System.out.println(res[i]);
+        }        
+        System.out.println("\n");
+    }
+    
+    public static ArrayList<Integer> getPosition(int n){
+        ArrayList<Integer> ls= new ArrayList<Integer>();
+        for(int i = 0 ; i < n ;i++ ){
+            ls.add( (int) Math.pow( 2 , i) );
+        }
+        for(Integer i : ls){
+            System.out.println(i);
+        }
+        return ls;
+    }
+    
+}

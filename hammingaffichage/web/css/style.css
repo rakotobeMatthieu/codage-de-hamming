@@ -1,0 +1,37 @@
+﻿body {
+    background: #e9faff;
+}
+
+.tableau{
+    margin : 28px auto 0 0px;
+}
+
+.formulaire{
+    width : 300px;
+    margin : 0 auto;
+    margin-bottom : 10px;
+}
+
+.onebox{
+  margin-top : 150px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding : 20px 20px 20px 20px;
+
+  min-height : 500px;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.center{
+    margin : 0 auto;
+}
+
+.partie1{
+    margin : 0 auto;
+    margin-top : 20px;
+}
